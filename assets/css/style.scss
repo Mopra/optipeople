@@ -62,8 +62,8 @@ header {
     }
     
     .logo {
-        width:60%;
-        margin-top: 10vh;
+        width:80%;
+        margin-top: 15vh;
          @media (max-width:990px) {
             display:block;
             width:80%;
@@ -286,4 +286,10 @@ footer .socialIcons{
     font-size:2em
 }
 
+
+.flow-text {
+    @media (max-width: 600px) {
+        font-size:1.7em !important;
+    }
+}
 
