@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+{% seo %}
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<link rel='shortcut icon' type='image/x-icon' href='{{site.url}}assets/uploads/favicon.ico' />
+
+{% include base.html %}
+
+<link rel="stylesheet" href="{{ page.base }}/css/main.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="{{ page.base }}/css/main.css"></noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-142049375-1" async></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142049375-1');
+</script>
+<!--Adsense-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6211358425116337",
+    enable_page_level_ads: true
+  });
+</script>
+
+<style>
+  .load-animate{opacity:0}
+  .load-animate.loaded{transition:opacity 500ms cubic-bezier(0.39, 0.575, 0.565, 1);transition-delay:.2s;opacity:1}
+</style>
+
+</head>
+<body class="load-animate">
+<div id="skrollr-body">
+
+{% if page.disqus %}
+  <script id="dsq-count-scr" src="//wikiwhy.disqus.com/count.js" async></script>
+{% endif %}
+
+{{ content }}
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <h3>WikiWhy</h3>
+    </div>
+    <!--<div class="row">
+      <div class="col s12 m6 l4">
+        <ul class="center">
+          <li><a href="#">Sub Title 1 which is super duper awesome</a></li>
+          <li><a href="#">Sub Title 1 which is super duper awesome</a></li>
+          <li><a href="#">Sub Title 1 which is super duper awesome</a></li>
+        </ul>
+      </div>
+      <div class="col s12 m6 l4">
+        <ul class="center">
+          <li><a href="#">Sub Title 1 which is super duper awesome</a></li>
+          <li><a href="#">Sub Title 1 which is super duper awesome</a></li>
+          <li><a href="#">Sub Title 1 which is super duper awesome</a></li>
+        </ul>
+      </div>
+      <div class="col s12 m12 l4">
+        <p class="center">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada convallis lorem ac facilisis. Integer vehicula dui a nibh porttitor accumsan. Nam iaculis ipsum eget sem sollicitudin elementum.
+        </p>
+      </div>
+    </div>-->
+    <div class="row">
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col s12 copyright">
+        © Wikiwhy
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="{{site.url}}/assets/js/jquery331.js"></script>
+
+
+<script type="text/javascript" src="{{site.url}}/assets/js/materialize.min.js"></script>
+<script type="text/javascript" src="{{site.url}}/assets/js/skrollr.js"></script>
+<script type="text/javascript" src="{{site.url}}/assets/js/main.js"></script>
+<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cf10671a4c11e1c" async></script>-->
+
+<script>
+$(document).ready(function () {
+  $(".load-animate").addClass("loaded");
+});
+</script>
+</body>
+</html>

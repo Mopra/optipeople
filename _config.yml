@@ -1,0 +1,35 @@
+title: WikiWhy
+description: >- # Ignore lines up to next function
+  We answer why get simple answers to your questions. We will explore any topic to answer the right questions.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://wikiwhy.xyz" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:categories/:title/
+name: /wikiwhy
+assetpath: /assets/uploads/
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+collections: #category related
+  category:
+    output: true
+defaults: #category related
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+plugins:  #Custom plugins
+  - jekyll-feed
+  - jekyll-toc
+  - jekyll-youtube
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+toc: #from the jekyll toc plugin
+  min_level: 2 # default: 1
+  max_level: 2 # default: 6
+google_site_verification: 123
+disqus_id: wikiwhy
+org_site: wikiwhy.xyz
