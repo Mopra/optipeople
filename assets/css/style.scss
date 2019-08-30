@@ -33,14 +33,13 @@ img { width:100%;height:auto; }
 }
 
 
-header {
+#header {
     background-image: url(../img/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 
     transition: all .5s;
-
     padding:10vh 0;
 
     height:75vh;
@@ -70,8 +69,8 @@ header {
         height:75vh;
         object-fit: cover;
         background-image: linear-gradient(to bottom right,
-            rgba(12, 25, 32, .85),
-            rgba(12, 25, 32, 1)
+            rgba(2, 6, 8, .65),
+            rgba(2, 6, 8, 1)
         );
         @media (max-width:990px) {
             height:90vw;
@@ -155,6 +154,85 @@ header {
 
 }
 
+#headerBlog {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  transition: all .5s;
+  padding:10vh 0;
+
+  height:55vh;
+  @media (max-width:990px) {
+      height:60vw;
+  }
+  @media (max-width:600px) {
+      height:45vh;
+  }
+  @media (max-width:400px) {
+      height:45vh;
+  }
+
+  figure {
+      position: absolute;
+      margin:0;padding:0;
+      top:0;left:0;
+      width:100%;
+      height:55vh;
+      object-fit: cover;
+      background-image: linear-gradient(to bottom right,
+          rgba(2, 6, 8, .65),
+          rgba(2, 6, 8, 1)
+      );
+      @media (max-width:990px) {
+          height:60vw;
+      }
+  @media (max-width:600px) {
+      height:45vh;
+  }
+  @media (max-width:400px) {
+      height:45vh;
+  }
+  }
+
+  .logo {
+      width:80%;
+      margin-top: 10vh;
+       @media (max-width:990px) {
+          display:block;
+          width:80%;
+          height:auto;
+           margin: 0 auto;
+      }
+  }
+
+  h2 {
+      position: relative;
+      color:#fff;
+      font-weight: 900;
+      font-weight: 100;
+      @media (max-width:1400px) {
+          font-size: 2.5em;
+      }
+      @media (max-width:990px) {
+          font-size:3em;
+          text-align: center;
+          margin-bottom: 10vw;
+      }
+  }
+
+  img {
+      position: relative;
+  }
+  .row, .col {
+      margin:0;padding:0;
+  }
+
+}
+
+.navBreadCumb {
+  padding: 0 20px;
+}
 
 main {
 
@@ -195,9 +273,9 @@ main {
     #cta-heading {
         padding:10vh 0;
         background:
-                    linear-gradient(
-            rgba(12, 25, 32, 0.9),
-            rgba(12, 25, 32, 1)
+          linear-gradient(
+            rgba(2, 6, 8, 0.8),
+            rgba(2, 6, 8, 1)
         ),
         url(../img/content01.jpg);
         background-size: cover;
@@ -215,6 +293,72 @@ main {
         h2 { width:100%;text-align: center;margin-bottom:15vh; }
 
 
+    }
+
+    #partner {
+      background-color:#020608;
+      padding:20vh 0;
+
+    }
+
+
+    #blog {
+      padding: 20vh 0;
+      a { color:#fff; }
+      .blogWrapper {
+        padding:5vh 2vw,
+      }
+      .blogCard {
+        position: relative;
+        padding:20px;
+        width:100%;
+        height:500px;
+        background:
+          linear-gradient(
+            rgba(2, 6, 8, .7),
+            rgba(2, 6, 8, .9)
+        ),
+        url(../img/content01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 10px;
+        box-shadow: 0 19px 68px rgba(0,0,0,0.30), 0 15px 68px rgba(0,0,0,0.22);
+        transition: all .2s;
+
+        &:hover {
+          box-shadow: 0 9px 28px rgba(0,0,0,0.40), 0 5px 28px rgba(0,0,0,0.32);
+        }
+
+        h3 {
+          font-size:3em;
+          font-weight: 900;
+          width:80%;
+          @media (max-width:1300px) {
+            font-size:2em;
+          }
+          @media (max-width:600px) {
+            font-size:3em;
+          }
+        }
+        p {
+          font-weight: 100;
+          width:80%;
+          @media (max-width:600px) {
+            font-size:1.4em;
+          }
+        }
+        .btn {
+          position: absolute;
+          bottom:40px;
+          right:40px;
+          color:#020608;
+          border-radius: 5px;
+          background-color:#fff;
+          box-shadow: 0 19px 68px rgba(0,0,0,0.30), 0 15px 68px rgba(0,0,0,0.22);
+        }
+
+      }
     }
 
     #team {
@@ -277,7 +421,7 @@ main {
 
 
 footer {
-   color:#cfd8dc;padding:50px 0 50px 0;min-height:30vh;background-color:#0c1920;
+   color:#cfd8dc;padding:50px 0 50px 0;min-height:30vh;background-color:rgba(2,6,8, 1);
 }
 footer h3 {
     color:#eceff1;font-size:1em
