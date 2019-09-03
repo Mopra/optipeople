@@ -82,7 +82,7 @@ layout: default
         <ul class="related_posts">
           {% for post in site.related_posts limit: 4 %}
             <li>
-              <a href="{{ post.url }}"><img src="/assets/uploads/{{ post.date | date: '%Y-%m-%d' }}-{{post.slug}}.jpg"></a>
+              <a href="{{ post.url }}"><img src="{{site.url}}assets/uploads/{{ post.date | date: '%Y-%m-%d' }}-{{post.slug}}.jpg"></a>
               <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
               <i><a href="/">Fra Optipeople</a></i>
             </li>

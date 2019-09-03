@@ -7,7 +7,7 @@ image: /assets/uploads/header.jpg
 
 <main id="page">
 
-  <div id="toolbar" class="hide-on-med-and-up" data-0="height:400px;" data-400="height: 400px;" style="background-image: url({{ page.image }});">
+  <div id="toolbar" class="hide-on-med-and-up" data-0="height:400px;" data-400="height: 400px;" style="background-image: url({{site.url}}{{ page.image }});">
     <div class="toolar-bg" data-0="height:400px;background-color:rgba(0,0,0,.3);" data-400="height:400px;background-color:rgba(0,0,0,.9);">
     <div id="actions">
       <div class="icon">
@@ -24,7 +24,7 @@ image: /assets/uploads/header.jpg
   </div>
 
 
-  <div id="toolbar" class="hide-on-small-only" data-0="height:500px;" data-500="height: 64px;" style="background-image: url({{ page.image }});">
+  <div id="toolbar" class="hide-on-small-only" data-0="height:500px;" data-500="height: 64px;" style="background-image: url({{site.url}}{{ page.image }});">
     <div class="toolar-bg" data-0="height:500px;background-color:rgba(0,0,0,.45);" data-500="height:64px;background-color:rgba(0,0,0,.8);">
 
     <div id="actions">
@@ -35,7 +35,7 @@ image: /assets/uploads/header.jpg
     </div>
     <div id="title" class="" data-0="font-size: 56px; padding: 0 0 42px 0;font-weight: 900;" data-500="font-size: 18px; padding: 0 0 21px 0;font-weight: 100;">
       <div id="categories" class="" data-0="font-size: 16px; padding: 0 0 42px 0;" data-500="font-size: 16px; padding: 0 0 32px 0;">
-        <img src="{{base.url}}assets/uploads/logo.png" class="logo" alt="Optipeople logo" >
+        <img src="{{site.url}}assets/uploads/logo.png" class="logo" alt="Optipeople logo" >
       </div>
       <h1 data-0="font-weight: 900;" data-500="font-weight: 900;">We turn data into decisions</h1>
     </div>
@@ -44,7 +44,7 @@ image: /assets/uploads/header.jpg
 
   <div class="content-wrapper">
 
-  <section id="value" style="background-image: url(/assets/uploads/iPad-bg.png);" class="scrollspy">
+  <section id="value" style="background-image: url({{site.url}}assets/uploads/iPad-bg.png);" class="scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s6 m6">

@@ -41,7 +41,7 @@
         <a href="/kontakt"><li><h2>Kontakt info<h2></li></a>
       <h4>Nye indlæg:</h4>
         {% for post in site.posts limit:5 %}
-            <a href="{{ post.url }}"><li><h2>{{ post.title }}</h2></li></a>
+            <a href="{{site.url}}{{ post.url }}"><li><h2>{{ post.title }}</h2></li></a>
         {% endfor %}
     </ul>
 </div>
@@ -67,12 +67,12 @@
                 <h3 class="flow-text">Nyt fra Optipeople</h3>
                 <ul class="flow-text">
                   {% for post in site.posts limit:5 %}
-                      <a href="{{ post.url }}" class="truncate">{{ post.title }}</a>
+                      <a href="{{site.url}}{{ post.url }}" class="truncate">{{ post.title }}</a>
                   {% endfor %}
                 </ul>
             </div>
             <div class="col s12 m6 l5">
-                <img src="/assets/uploads/logo.png" alt="Optipeople logo" style="padding:10% 20% 20% 20%;">
+                <img src="{{site.url}}assets/uploads/logo.png" alt="Optipeople logo" style="padding:10% 20% 20% 20%;">
             </div>
         </div>
         <div class="row">
