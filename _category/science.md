@@ -1,0 +1,4 @@
+---
+tag: science
+permalink: "/science"
+---

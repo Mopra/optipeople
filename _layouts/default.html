@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+{% seo %}
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<link rel='shortcut icon' type='image/x-icon' href='{{site.url}}assets/uploads/favicon.ico' />
+
+{% include base.html %}
+
+<link rel="stylesheet" href="{{ page.base }}/css/main.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="{{ page.base }}/css/main.css"></noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
+
+<style>
+  .load-animate{opacity:0}
+  .load-animate.loaded{transition:opacity 500ms cubic-bezier(0.39, 0.575, 0.565, 1);transition-delay:.2s;opacity:1}
+</style>
+
+</head>
+<body class="load-animate">
+<div id="skrollr-body">
+
+<div id="nav-icon">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<div id="nav-content">
+
+  <ul>
+    <li>Link 1</li>
+    <li>Link 2</li>
+  </ul>
+
+</div>
+
+{{ content }}
+
+
+<footer>
+    <div class="container">
+     <div class="row">
+            <div class="col s12 m6 l4">
+                <h3 class="flow-text">Info</h3>
+                <ul class="flow-text">
+                    <li><p>Mail: support@optipeople.dk</p></li>
+                    <li><p>Tlf.: (+45) 77 34 11 55</p></li>
+                    <li><p>Sønderskovvej 17</p></li>
+                    <li><p>8362 Hørning</p></li>
+                    <li><p>OptiPeople ApS</p></li>
+                    <li><p>CVR: 32883532</p></li>
+                </ul>
+            </div>
+            <div class="col s12 m6 l3">
+                <h3 class="flow-text">Sitemap</h3>
+                <ul class="flow-text">
+                    <li><a href="#production">Vi kan optimere din produktion</a></li>
+                    <li><a href="#cta-heading">Kom igang</a></li>
+                    <li><a href="#team">Teamet</a></li>
+                </ul>
+            </div>
+            <div class="col s12 m6 l5">
+                <img src="{{base.url}}assets/uploads/logo.png" alt="Optipeople logo" style="padding:10% 20% 20% 20%;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="copyright">
+                <hr>
+                <div class="col s12 m6 l6">
+                   © Optipeople ApS
+                </div>
+                <div class="col s12 m6 l6">
+                    <a class="right" href="mailto:support@optipeople.dk" target="_blank">support@optipeople.dk</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<!--JavaScript-->
+<script type="text/javascript" src="{{site.url}}/assets/js/jquery331.js"></script>
+
+<script type="text/javascript" src="{{site.url}}/assets/js/materialize.min.js"></script>
+<script type="text/javascript" src="{{site.url}}/assets/js/skrollr.js"></script>
+<script type="text/javascript" src="{{site.url}}/assets/js/main.js"></script>
+
+
+<script>
+$(document).ready(function () {
+  $(".load-animate").addClass("loaded");
+});
+</script>
+
+</body>
+</html>

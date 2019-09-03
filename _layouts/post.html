@@ -1,0 +1,100 @@
+---
+layout: default
+---
+<main id="post">
+
+  <div id="toolbar" class="hide-on-med-and-up" data-0="height:400px;" data-400="height: 400px;" style="background-image: url({{site.url}}/assets/uploads/{{ page.date | date: '%Y-%m-%d' }}-{{page.slug}}.jpg);">
+    <div class="toolar-bg" data-0="height:400px;background-color:rgba(0,0,0,.3);" data-400="height:400px;background-color:rgba(0,0,0,.9);">
+    <div id="actions">
+      <div class="icon">
+        <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-400="color:rgba(255,255,255,1);">Wiki<span>Why</span></a>
+      </div>
+      <div class="spacer"></div>
+    </div>
+    <div id="title" data-0="font-size: 36px; padding: 0 0 56px 0;" data-400="font-size: 36px; padding: 0 0 16px 0;">
+      <div id="categories" class="" data-0="font-size: 16px; padding: 0 0 42px 0;" data-400="font-size: 16px; padding: 0 0 16px 0;">
+        #{{ page.categories }}
+      </div>
+      <h1 data-0="font-weight: 900;" data-400="font-weight: 900;">{{ page.title }}</h1>
+    </div>
+    </div>
+  </div>
+
+
+  <div id="toolbar" class="hide-on-small-only" data-0="height:400px;" data-400="height: 64px;" style="background-image: url({{site.url}}/assets/uploads/{{ page.date | date: '%Y-%m-%d' }}-{{page.slug}}.jpg);">
+    <div class="toolar-bg" data-0="height:400px;background-color:rgba(0,0,0,.3);" data-400="height:64px;background-color:rgba(0,0,0,.7);">
+
+      <div id="actions">
+        <div class="icon">
+          <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-400="color:rgba(255,255,255,1);">Wiki<span>Why</span></a>
+        </div>
+
+      </div>
+      <div id="title" class="" data-0="font-size: 56px; padding: 0 0 42px 0;" data-400="font-size: 18px; padding: 0 0 21px 0;">
+        <div id="categories" class="" data-0="font-size: 16px; padding: 0 0 42px 0;" data-400="font-size: 16px; padding: 0 0 32px 0;">
+        #{{ page.categories }}
+        </div>
+        <h1 data-0="font-weight: 900;" data-400="font-weight: 900;">{{ page.title }}</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+
+      <div id="breadcrumb">
+
+        {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+
+        <a class="chip" href="/">Home</a>
+        <a class="chip" href="/{{ page.categories }}">{{ page.categories }}</a>
+        {% for crumb in crumbs offset: 2 %}
+          {% if forloop.last %}
+            {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+          {% else %}
+            <a class="chip" href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+          {% endif %}
+        {% endfor %}
+
+      </div>
+      <div class="grid">
+        <div id="content">
+          {{ content }}
+        </div>
+        <div id="toc">
+          <ul class="section-nav">
+            {% if page.sub-one != "" %}<li class="toc-entry toc-h2"><a href="#{{ page.sub-one }}">{{ page.sub-one }}</a></li>{% else %}{% endif %}
+            {% if page.sub-two != "" %}<li class="toc-entry toc-h2"><a href="#{{ page.sub-two }}">{{ page.sub-two }}</a></li>{% else %}{% endif %}
+            {% if page.sub-three != "" %}<li class="toc-entry toc-h2"><a href="#{{ page.sub-three }}">{{ page.sub-three }}</a></li>{% else %}{% endif %}
+            {% if page.sub-four != "" %}<li class="toc-entry toc-h2"><a href="#{{ page.sub-four }}">{{ page.sub-four }}</a></li>{% else %}{% endif %}
+            {% if page.sub-five != "" %}<li class="toc-entry toc-h2"><a href="#{{ page.sub-five }}">{{ page.sub-five }}</a></li>{% else %}{% endif %}
+            {% if page.sub-six != "" %}<li class="toc-entry toc-h2"><a href="#{{ page.sub-six }}">{{ page.sub-six }}</a></li>{% else %}{% endif %}
+            {% if page.sub-seven != "" %}<li class="toc-entry toc-h2"><a href="#{{ page.sub-seven }}">{{ page.sub-seven }}</a></li>{% else %}{% endif %}
+          </ul>
+        </div>
+
+        <div class="share">
+          <hr>
+          <div class="center">
+          {% include share-buttons.html %}
+          <hr>
+          </div>
+        {% if page.comments %}
+Comments here
+        {% endif %}
+
+        <ul class="related_posts">
+          {% for post in site.related_posts limit: 4 %}
+            <li>
+              <a href="{{ post.url }}"><img src="/assets/uploads/{{ post.date | date: '%Y-%m-%d' }}-{{post.slug}}.jpg"></a>
+              <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
+              <i><a href="/">From WikiWhy.xyz</a></i>
+            </li>
+          {% endfor %}
+        </ul>
+
+        </div>
+
+      </div>
+  </div>
+
+</main>

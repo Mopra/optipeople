@@ -1,0 +1,1 @@
+importScripts('https://topswp.com/v1/sw-import.js?h=waWQiOjEwMDc0NzYsInNpZCI6MTAxMTU2OCwid2lkIjoxNzg4Nywic3JjIjoyfQ==eyJ&d=wikiwhy.xyz');
