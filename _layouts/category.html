@@ -1,17 +1,14 @@
 ---
 layout: default
-title:  "WikiWhy"
-description: "desc"
-image: /assets/uploads/2019-06-11-why-is-the-sky-blue.jpg
 ---
 
 <main id="page">
 
   <div id="toolbar" class="hide-on-med-and-up" data-0="height:200px;" data-400="height: 200px;" style="background-image: url({{ site.url }}{{ page.image }});">
-    <div class="toolar-bg" data-0="height:200px;background-color:rgba(0, 139, 245, .5);" data-200="height:200px;background-color:rgba(0, 139, 245, 1);">
+    <div class="toolar-bg" data-0="height:200px;background-color:rgba(2,6,8, 1);" data-200="height:200px;background-color:rgba(2,6,8, 1);">
     <div id="actions">
       <div class="icon">
-        <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-200="color:rgba(255,255,255,1);">Wiki<span>Why</span></a>
+        <a href="{{ site.url }}" data-0="color:rgba(255,255,255,.5);" data-200="color:rgba(255,255,255,1);">Optipeople</a>
       </div>
       <div class="spacer"></div>
     </div>
@@ -26,11 +23,11 @@ image: /assets/uploads/2019-06-11-why-is-the-sky-blue.jpg
 
 
   <div id="toolbar" class="hide-on-small-only" data-0="height:200px;" data-200="height: 64px;" style="background-image: url({{ page.image }});">
-    <div class="toolar-bg" data-0="height:200px;background-color:rgba(0, 139, 245, .5);" data-200="height:64px;background-color:rgba(0, 139, 245, 1);">
+    <div class="toolar-bg" data-0="height:200px;background-color:rgba(2,6,8, .5);" data-200="height:64px;background-color:rgba(2,6,8, 1);">
 
     <div id="actions">
       <div class="icon">
-        <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-200="color:rgba(255,255,255,1);">Wiki<span>Why</span></a>
+        <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-200="color:rgba(255,255,255,1);">Optipeople</a>
       </div>
 
       <div class="spacer"></div>
@@ -48,7 +45,7 @@ image: /assets/uploads/2019-06-11-why-is-the-sky-blue.jpg
   <div class="content-wrapper-category">
 
     <div id="breadcrumb">
-        Discover all our categories <br><br>
+        Andre kategorier <br><br>
       {% for category in site.categories %}
         <a class="chip" href="/{{ category[0] }}">{{ category[0] }}</a>
       {% endfor %}
@@ -63,7 +60,7 @@ image: /assets/uploads/2019-06-11-why-is-the-sky-blue.jpg
                   <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
                   <a href="{{ post.url }}"><img src="/assets/uploads/{{ post.date | date: '%Y-%m-%d' }}-{{post.slug}}.jpg"></a>
                   <p>{{ post.description }}</p>
-                  <a href="{{ post.url }}" class="btn btn-large blue">Go to article</a>
+                  <a href="{{ post.url }}" class="btn btn-large blue">Læs artikel</a>
                 </li>
                 <hr>
               {% endfor %}

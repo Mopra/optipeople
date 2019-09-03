@@ -1,10 +1,31 @@
+#nav-cta-btn {
+  position: fixed;
+  top:14px;
+  right:110px;
+  z-index:999;
+  padding: 6px 24px;
+  background-image: linear-gradient(to right, #396afc, #2948ff);
+  color:#fff;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: all .2s;
+  cursor: pointer;
 
-//Icon 2
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  @media (max-width:960px) {
+    display:none;
+  }
+
+}
 
 #nav-icon {
   position: fixed;
   top:20px;
-  right:3vw;
+  right:40px;
   z-index:999999;
   padding:20px;
   cursor: pointer;
@@ -99,11 +120,11 @@
   top:0;left:0;
   width:100vw;
   height:100vh;
-  background:#2196F3;
+  background:#0d1215;
   z-index: 99999;
   visibility: hidden;
   opacity: 0;
-  transition: all .5s;
+  transition: opacity .5s;
 
   &.active {
 
@@ -119,18 +140,35 @@
       position: relative;
       top: 50%;
       transform: translateY(-50%);
-
+      width:50%;
+      margin:0 auto;
     }
+
+    h4 {
+      color:#fff;
+      font-size:21px;
+      margin:40px 0 10px 0;
+      @media (max-width:600px) {
+        font-size:16px;
+      }
+    }
+
     li {
-      font-size: 46px;
       font-weight: 900;
       color:#fff;
       width:100%;
-      padding: 20px 0;
+      padding: 0;
+      margin:0;
       text-align: left;
       animation-duration: 1.0s;
       animation-fill-mode: both;
       animation-name: fadeInUp;
+    }
+    h2 {
+      margin:0;
+      @media (max-width:600px) {
+        font-size:35px;
+      }
     }
   }
 }

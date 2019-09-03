@@ -1,4 +1,0 @@
----
-tag: animals
-permalink: "/animals"
----

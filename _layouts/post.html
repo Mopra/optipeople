@@ -7,7 +7,7 @@ layout: default
     <div class="toolar-bg" data-0="height:400px;background-color:rgba(0,0,0,.3);" data-400="height:400px;background-color:rgba(0,0,0,.9);">
     <div id="actions">
       <div class="icon">
-        <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-400="color:rgba(255,255,255,1);">Wiki<span>Why</span></a>
+        <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-400="color:rgba(255,255,255,1);">Optipeople</a>
       </div>
       <div class="spacer"></div>
     </div>
@@ -26,7 +26,7 @@ layout: default
 
       <div id="actions">
         <div class="icon">
-          <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-400="color:rgba(255,255,255,1);">Wiki<span>Why</span></a>
+          <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-400="color:rgba(255,255,255,1);">Optipeople</a>
         </div>
 
       </div>
@@ -78,16 +78,13 @@ layout: default
           {% include share-buttons.html %}
           <hr>
           </div>
-        {% if page.comments %}
-Comments here
-        {% endif %}
 
         <ul class="related_posts">
           {% for post in site.related_posts limit: 4 %}
             <li>
               <a href="{{ post.url }}"><img src="/assets/uploads/{{ post.date | date: '%Y-%m-%d' }}-{{post.slug}}.jpg"></a>
               <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
-              <i><a href="/">From WikiWhy.xyz</a></i>
+              <i><a href="/">Fra Optipeople</a></i>
             </li>
           {% endfor %}
         </ul>

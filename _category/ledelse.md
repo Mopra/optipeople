@@ -1,0 +1,4 @@
+---
+tag: ledelse
+permalink: "/ledelse"
+---

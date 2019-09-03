@@ -24,6 +24,8 @@
 <body class="load-animate">
 <div id="skrollr-body">
 
+<a id="nav-cta-btn" href="/#getStartet">Book et møde</a>
+
 <div id="nav-icon">
   <span></span>
   <span></span>
@@ -33,12 +35,15 @@
   <span></span>
 </div>
 <div id="nav-content">
-
-  <ul>
-    <li>Link 1</li>
-    <li>Link 2</li>
-  </ul>
-
+    <ul>
+      <h4>Optipeople</h4>
+        <a href="/"><li><h2>Forside<h2></li></a>
+        <a href="/kontakt"><li><h2>Kontakt info<h2></li></a>
+      <h4>Nye indlæg:</h4>
+        {% for post in site.posts limit:5 %}
+            <a href="{{ post.url }}"><li><h2>{{ post.title }}</h2></li></a>
+        {% endfor %}
+    </ul>
 </div>
 
 {{ content }}
@@ -59,15 +64,15 @@
                 </ul>
             </div>
             <div class="col s12 m6 l3">
-                <h3 class="flow-text">Sitemap</h3>
+                <h3 class="flow-text">Nyt fra Optipeople</h3>
                 <ul class="flow-text">
-                    <li><a href="#production">Vi kan optimere din produktion</a></li>
-                    <li><a href="#cta-heading">Kom igang</a></li>
-                    <li><a href="#team">Teamet</a></li>
+                  {% for post in site.posts limit:5 %}
+                      <a href="{{ post.url }}" class="truncate">{{ post.title }}</a>
+                  {% endfor %}
                 </ul>
             </div>
             <div class="col s12 m6 l5">
-                <img src="{{base.url}}assets/uploads/logo.png" alt="Optipeople logo" style="padding:10% 20% 20% 20%;">
+                <img src="/assets/uploads/logo.png" alt="Optipeople logo" style="padding:10% 20% 20% 20%;">
             </div>
         </div>
         <div class="row">

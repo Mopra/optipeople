@@ -1,4 +1,0 @@
----
-tag: health
-permalink: "/health"
----

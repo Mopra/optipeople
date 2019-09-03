@@ -1,10 +1,10 @@
-title: WikiWhy
+title: Optipeople
 description: >- # Ignore lines up to next function
-  Simple answers to popular questions
+  Producerer din virksomhed optimalt hver eneste dag og på hver eneste maskine?
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://wikiwhy.xyz" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://optipeople.dk" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:categories/:title/
-name: /wikiwhy
+name: /OptiPeople
 assetpath: /assets/uploads/
 # Build settings
 markdown: kramdown
@@ -30,5 +30,3 @@ plugins:  #Custom plugins
 toc: #from the jekyll toc plugin
   min_level: 2 # default: 1
   max_level: 2 # default: 6
-disqus_id: wikiwhy
-org_site: wikiwhy.xyz

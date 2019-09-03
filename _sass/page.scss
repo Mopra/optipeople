@@ -91,16 +91,124 @@ img {
 }
 
 #value {
-  padding:5vh 0;
+  padding:35vh 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media (max-width:600px) {
+    padding: 5vh 0 10vh 0;
+  }
 }
 
-#production {
+#cta {
+  position: relative;
+  padding: 10vh 0;
+  background-color:#364046;
 
+  .cta-btn {
+    position:absolute;
+    width:500px;
+    text-align: center;
+    left: calc(50% - 250px);
+    top: -35px;
+    padding: 20px 20px;
+    background-image: linear-gradient(to right, #396afc, #2948ff);
+    color:#fff;
+    border-radius: 12px;
+    font-size: 1.5em;
+    font-weight: 600;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 19px 88px rgba(0,0,0,0.40), 0 15px 52px rgba(0,0,0,0.32);
+    }
+  }
+}
+
+
+#production {
+  padding: 25vh 0;
+  background-color:#0d1215;
+  color:#fff;
+  h4 {
+    line-height: 1.5em;
+  }
 }
 
 #partner {
-  padding: 25vh 0;
+  padding: 10vh 0 25vh 0;
   background-color:#020608;
+
+  h5 {
+    padding: 10vh 0 10vh 0;
+    width:100%;
+    text-align: center;
+    color:#fff;
+
+    &:after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 10%;
+      padding-top: 20px;
+      border-bottom: 3px solid #2948ff;
+      border-radius: 3px;
+    }
+  }
+
+}
+
+#getStartet {
+  padding:10vh 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  color:#fff;
+  ul li {
+      list-style-type: circle;
+      font-weight: 600;
+
+  }
+}
+
+#team {
+  padding: 10vh 0 5vh 0;
+
+  .col {
+    padding: 50px;
+  }
+  .headline {
+    padding: 10vh 0 10vh 0;
+    width:100%;
+    text-align: center;
+    color:#000;
+
+    &:after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 10%;
+      padding-top: 20px;
+      border-bottom: 3px solid #2948ff;
+      border-radius: 3px;
+    }
+  }
+
+  p {
+    &:after {
+      content: "";
+      display: block;
+      width: 50px;
+      padding-top: 20px;
+      border-bottom: 3px solid #000;
+      border-radius: 3px;
+    }
+  }
+
 }
 
 
