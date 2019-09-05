@@ -92,18 +92,23 @@ img {
 
 #value {
   padding:35vh 0;
+  background-image: url(../assets/uploads/iPad-bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 
   @media (max-width:600px) {
     padding: 5vh 0 10vh 0;
+    background-image:none;
+    img {
+      margin-top: 5vh;
+    }
   }
 }
 
 #cta {
   position: relative;
-  padding: 10vh 0;
+  //padding: 15vh 0 13vh 0;
   background-color:#364046;
 
   .cta-btn {
@@ -130,11 +135,14 @@ img {
 
 
 #production {
-  padding: 25vh 0;
+  padding: 25vh 0 15vh 0;
   background-color:#0d1215;
   color:#fff;
   h4 {
     line-height: 1.5em;
+  }
+  @media (max-width:600px) {
+    padding: 15vh 0;
   }
 }
 
@@ -159,10 +167,71 @@ img {
     }
   }
 
+  @media (max-width:600px) {
+    padding: 5vh 0 10vh 0;
+  }
+
 }
 
+#blog {
+  padding: 20vh 0;
+  h2 {
+    font-weight: 900;
+    font-size:2em;
+  }
+  a { color:#fff; }
+  .blogWrapper {
+    padding:5vh 2vw,
+  }
+  .blogCard {
+    position: relative;
+    padding:20px;
+    width:100%;
+    height:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+    box-shadow: 0 19px 68px rgba(0,0,0,0.30), 0 15px 68px rgba(0,0,0,0.22);
+    transition: all .2s;
+
+    &:hover {
+      box-shadow: 0 9px 28px rgba(0,0,0,0.40), 0 5px 28px rgba(0,0,0,0.32);
+    }
+
+    h3 {
+      font-size:3em;
+      font-weight: 900;
+      width:80%;
+      @media (max-width:1600px) { font-size:2.8em; }
+      @media (max-width:1500px) { font-size:2.6em; }
+      @media (max-width:1400px) { font-size:2.4em; }
+      @media (max-width:1300px) { font-size:2em; }
+      @media (max-width:600px) { font-size:3em; }
+    }
+    p {
+      font-weight: 100;
+      width:80%;
+      @media (max-width:600px) {
+        font-size:1.4em;
+      }
+    }
+    .btn {
+      position: absolute;
+      bottom:40px;
+      right:40px;
+      color:#020608;
+      border-radius: 5px;
+      background-color:#fff;
+      box-shadow: 0 19px 68px rgba(0,0,0,0.30), 0 15px 68px rgba(0,0,0,0.22);
+    }
+
+  }
+}
+
+
 #getStartet {
-  padding:10vh 0;
+  padding:15vh 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -171,7 +240,10 @@ img {
   ul li {
       list-style-type: circle;
       font-weight: 600;
+  }
 
+  @media (max-width:600px) {
+    padding: 10vh 0;
   }
 }
 
@@ -182,7 +254,7 @@ img {
     padding: 50px;
   }
   .headline {
-    padding: 10vh 0 10vh 0;
+    padding: 10vh 0;
     width:100%;
     text-align: center;
     color:#000;
@@ -196,6 +268,10 @@ img {
       border-bottom: 3px solid #2948ff;
       border-radius: 3px;
     }
+    @media (max-width:600px) {
+      padding: 5vh 0;
+    }
+
   }
 
   p {
@@ -209,8 +285,37 @@ img {
     }
   }
 
+  @media (max-width:600px) {
+    padding: 5vh 0 0 0;
+  }
+
 }
 
+#category {
+  .read-more {
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 2vw;
+    background-image: linear-gradient(to right, #396afc, #2948ff);
+    color:#fff;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 100;
+    box-shadow: 0 9px 8px rgba(0,0,0,0.20), 0 5px 4px rgba(0,0,0,0.12);
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 9px 18px rgba(0,0,0,0.20), 0 5px 14px rgba(0,0,0,0.12);
+    }
+  }
+}
+
+
+.maps {
+  width:100%;
+  height:600px;
+}
 
 /*TOC START*/
 .truncate {color:inherit !important;}

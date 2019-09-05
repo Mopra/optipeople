@@ -60,6 +60,9 @@ img {
       span {
         font-weight: 900;
       }
+      .logo {
+        width:150px;
+      }
     }
   }
 
@@ -130,7 +133,52 @@ main {
   }
 }
 
+.modal {
+  overflow: hidden;
+  padding:5vh;
+  width:55%;
+  .row, .col { padding:0;margin:0; }
+  img {
+    border-radius: 50%;
+    background-color:#f3f3f3;
+  }
+  .modal-close {
+    position:absolute;
+    bottom:0;right:0;
+  }
 
+  .modal-cta {
+    padding: 6px 24px;
+    background-image: linear-gradient(to right, #396afc, #2948ff);
+    color:#fff;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+  }
+
+  @media (min-width:1700px) {
+    h5 {
+      margin-top:5vh;
+    }
+  }
+  @media (max-width:992px) {
+    width:80%;
+    padding:5vh 3vh;
+  }
+  @media (max-width:600px) {
+    width:97%;
+    padding:5vh 0;
+    .col { padding: 0 10px; }
+  }
+
+}
 
 footer {
   box-shadow: 0 50px 0 rgba(2,6,8, 1);
@@ -165,6 +213,15 @@ footer .row{
 }
 footer .socialIcons{
     font-size:2em
+}
+footer img {
+  padding:10% 20% 20% 20%;
+  @media (max-width:992px) {
+    padding:10% 30% 10% 2%;
+  }
+  @media (max-width:600px) {
+    padding:20% 0 20% 0;
+  }
 }
 
 

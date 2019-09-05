@@ -7,24 +7,26 @@ image: /assets/uploads/header.jpg
 
 <main id="page">
 
-  <div id="toolbar" class="hide-on-med-and-up" data-0="height:400px;" data-400="height: 400px;" style="background-image: url({{site.url}}{{ page.image }});">
+  <div id="toolbar" class="hide-on-med-and-up" data-0="height:400px;" data-400="height: 400px;" style="background-image: url({{base.url}}{{ page.image }});">
     <div class="toolar-bg" data-0="height:400px;background-color:rgba(0,0,0,.3);" data-400="height:400px;background-color:rgba(0,0,0,.9);">
-    <div id="actions">
-      <div class="icon">
-        <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-400="color:rgba(255,255,255,1);">Optipeople</a>
+      <div id="actions">
+        <div class="icon">
+          <a href="{{base.url}}" data-0="color:rgba(255,255,255,1);" data-400="color:rgba(255,255,255,1);">
+            <img src="{{base.url}}assets/uploads/logo.png" class="logo" alt="Optipeople logo" style="width:150px;">
+          </a>
+        </div>
       </div>
-    </div>
-    <div id="title" data-0="font-size: 36px; padding: 0 0 56px 0;" data-400="font-size: 36px; padding: 0 0 16px 0;">
-      <div id="categories" class="" data-0="font-size: 16px; padding: 0 0 42px 0;" data-400="font-size: 16px; padding: 0 0 16px 0;">
-        <!--Optipeople-->
+      <div id="title" data-0="font-size: 36px; padding: 0 0 56px 0;" data-400="font-size: 36px; padding: 0 0 16px 0;">
+        <div id="categories" class="" data-0="font-size: 16px; padding: 0 0 42px 0;" data-400="font-size: 16px; padding: 0 0 16px 0;">
+          <!--Optipeople-->
+        </div>
+        <h1 data-0="font-weight: 900;" data-500="font-weight: 900;">We turn data into decisions</h1>
       </div>
-      <h1 data-0="font-weight: 900;" data-500="font-weight: 900;">We turn data into decisions</h1>
-    </div>
     </div>
   </div>
 
 
-  <div id="toolbar" class="hide-on-small-only" data-0="height:500px;" data-500="height: 64px;" style="background-image: url({{site.url}}{{ page.image }});">
+  <div id="toolbar" class="hide-on-small-only" data-0="height:500px;" data-500="height: 64px;" style="background-image: url({{base.url}}{{ page.image }});">
     <div class="toolar-bg" data-0="height:500px;background-color:rgba(0,0,0,.45);" data-500="height:64px;background-color:rgba(0,0,0,.8);">
 
     <div id="actions">
@@ -35,7 +37,7 @@ image: /assets/uploads/header.jpg
     </div>
     <div id="title" class="" data-0="font-size: 56px; padding: 0 0 42px 0;font-weight: 900;" data-500="font-size: 18px; padding: 0 0 21px 0;font-weight: 100;">
       <div id="categories" class="" data-0="font-size: 16px; padding: 0 0 42px 0;" data-500="font-size: 16px; padding: 0 0 32px 0;">
-        <img src="{{site.url}}assets/uploads/logo.png" class="logo" alt="Optipeople logo" >
+        <img src="{{base.url}}assets/uploads/logo.png" class="logo" alt="Optipeople logo" >
       </div>
       <h1 data-0="font-weight: 900;" data-500="font-weight: 900;">We turn data into decisions</h1>
     </div>
@@ -44,14 +46,17 @@ image: /assets/uploads/header.jpg
 
   <div class="content-wrapper">
 
-  <section id="value" style="background-image: url({{site.url}}assets/uploads/iPad-bg.png);" class="scrollspy">
+  <section id="value" class="scrollspy">
     <div class="container">
       <div class="row">
-        <div class="col s6 m6">
+        <div class="col s12 m6">
           <h4>Producerer din virksomhed optimalt hver eneste dag og på hver eneste maskine?</h4>
           <p class="flow-text">
             Det er jo drømmen at det sker. <br>Virkeligheden er sikkert en anden.
           </p>
+        </div>
+        <div class="col s12">
+          <img src="{{base.url}}assets/uploads/iPad-bg-mobile.png" class="hide-on-med-and-up">
         </div>
       </div>
     </div>
@@ -59,20 +64,20 @@ image: /assets/uploads/header.jpg
 
   <section id="cta" class="scrollspy">
 
-    <div class="container">
+    <!--<div class="container">
       <div class="row">
         <div class="logoWall">
 
-          <div class="col s6 m3"><img src="{{site.url}}assets/uploads/Hydro.png"></div>
-          <div class="col s6 m3"><img src="{{site.url}}assets/uploads/Vola.png"></div>
-          <div class="col s6 m3"><img src="{{site.url}}assets/uploads/GogM.png"></div>
-          <div class="col s6 m3"><img src="{{site.url}}assets/uploads/Alfalaval.png"></div>
+          <div class="col s6 m3"><img src="{{base.url}}assets/uploads/Hydro.png"></div>
+          <div class="col s6 m3"><img src="{{base.url}}assets/uploads/Vola.png"></div>
+          <div class="col s6 m3"><img src="{{base.url}}assets/uploads/GogM.png"></div>
+          <div class="col s6 m3"><img src="{{base.url}}assets/uploads/Alfalaval.png"></div>
 
         </div>
       </div>
-    </div>
+    </div>-->
 
-    <a class="cta-btn" href="#getStartet">Prøv det uforpligtende</a>
+    <a class="cta-btn waves-effect waves-light modal-trigger" href="#modal1">Prøv det uforpligtende</a>
   </section>
 
     <section id="production" class="scrollspy">
@@ -114,7 +119,33 @@ image: /assets/uploads/header.jpg
         </div>
     </section>
 
-    <section id="getStartet" class="scrollspy" style="background-image:linear-gradient(rgba(2, 6, 8, 0.8),rgba(2, 6, 8, 1)),url({{site.url}}assets/uploads/content01.jpg);">
+    <section id="blog" class="scrollspy">
+        <div class="container">
+            <div class="row">
+                <h2> Optipeople tema - Ledelse</h2>
+                <p div class="col s12 m6 flow-text">
+                  Vi udvikler software – Men uden menneskelig interaktion flytter det ikke rigtig noget. Det kræver mennesker, ledelse og handling. Til inspiration har vi lavet 3 artikler om: Positiv Psykologi, Hjerneforskning og Eksekvering
+                </p>
+            </div>
+            <div class="row">
+
+              {% for post in site.posts %}
+                <div class="col s12 m6 l4 blogWrapper">
+                  <a href="{{ post.url }}">
+                    <div class="blogCard" style="background:linear-gradient(rgba(2, 6, 8, .5),rgba(2, 6, 8, .7)),url(/assets/uploads/{{ post.date | date: '%Y-%m-%d' }}-{{post.slug}}.jpg);">
+                      <h3>{{ post.title }}</h3>
+                      <p>{{ post.description }}</p>
+                      <a class="btn" href="{{ post.url }}">Læs artiklen</a>
+                    </div>
+                  </a>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+
+    <section id="getStartet" class="scrollspy" style="background-image:linear-gradient(rgba(2, 6, 8, 0.8),rgba(2, 6, 8, 1)),url({{base.url}}assets/uploads/content01.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col s12 m10 l8">
@@ -127,6 +158,7 @@ image: /assets/uploads/header.jpg
                             <li>Bagefter sørger OptiPeople for at levere bokse, montere dem og uddanne medarbejderne.</li>
                             <li>Du kan nu logge ind online og holde øje med produktiviteten.</li>
                             <li>Vores team af specialister kan hjælpe med rådgivning, business intelligence og hvad du ellers måtte have behov for i jagten på højere effektivitet.</li>
+                            <li>Vi vil altid være klar til at supportere indtil du er tilfreds</li>
                         </ul>
                     <p class="flow-text">
     De data, der opsamles, kan bagefter anvendes til at optimere produktionen og investeringer i nye maskiner. Det kan vi naturligvis også hjælpe med.
@@ -148,7 +180,7 @@ image: /assets/uploads/header.jpg
 
           <div class="col s12 m10 l4 push-m1">
             <div class="row">
-              <img src="{{site.url}}assets/uploads/kim.png">
+              <img src="{{base.url}}assets/uploads/kim.png">
             </div>
             <div class="row">
               <h5>Kim Dannesboe</h5>
@@ -160,7 +192,7 @@ image: /assets/uploads/header.jpg
           <div class="col s12 m10 l4 push-m1">
             <div class="row">
               <div class="underlay"></div>
-              <img src="{{site.url}}assets/uploads/morten.png">
+              <img src="{{base.url}}assets/uploads/morten.png">
 
             </div>
             <div class="row">
@@ -172,7 +204,7 @@ image: /assets/uploads/header.jpg
 
           <div class="col s12 m10 l4 push-m1">
             <div class="row">
-              <img src="{{site.url}}assets/uploads/kenneth.png">
+              <img src="{{base.url}}assets/uploads/kenneth.png">
             </div>
             <div class="row">
               <h5>Kenneth Bech Sørensen</h5>

@@ -7,7 +7,7 @@ layout: default
     <div class="toolar-bg" data-0="height:400px;background-color:rgba(0,0,0,.3);" data-400="height:400px;background-color:rgba(0,0,0,.9);">
     <div id="actions">
       <div class="icon">
-        <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-400="color:rgba(255,255,255,1);">Optipeople</a>
+        <a href="/"><img src="/assets/uploads/logo.png" class="logo" alt="Optipeople logo" style="width:150px;"></a>
       </div>
       <div class="spacer"></div>
     </div>
@@ -26,7 +26,7 @@ layout: default
 
       <div id="actions">
         <div class="icon">
-          <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-400="color:rgba(255,255,255,1);">Optipeople</a>
+          <a href="/" data-0="color:rgba(255,255,255,1);" data-400="color:rgba(255,255,255,1);">Optipeople</a>
         </div>
 
       </div>
@@ -82,8 +82,9 @@ layout: default
         <ul class="related_posts">
           {% for post in site.related_posts limit: 4 %}
             <li>
-              <a href="{{ post.url }}"><img src="{{site.url}}assets/uploads/{{ post.date | date: '%Y-%m-%d' }}-{{post.slug}}.jpg"></a>
+              <a href="{{ post.url }}"><img src="/assets/uploads/{{ post.date | date: '%Y-%m-%d' }}-{{post.slug}}.jpg"></a>
               <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
+              <p>{{ post.description }}</p>
               <i><a href="/">Fra Optipeople</a></i>
             </li>
           {% endfor %}

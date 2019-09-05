@@ -8,11 +8,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<link rel='shortcut icon' type='image/x-icon' href='/assets/uploads/favicon.ico' />
+<link rel='shortcut icon' type='image/x-icon' href='/assets/uploads/icon.ico' />
 
 {% include base.html %}
 
-<link rel="stylesheet" href="{{site.url}}css/main.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="{{site.url}}css/main.css"></noscript>
+<link rel="stylesheet" href="/css/main.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="/css/main.css"></noscript>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
 
 <style>
@@ -24,7 +24,7 @@
 <body class="load-animate">
 <div id="skrollr-body">
 
-<a id="nav-cta-btn" href="/#getStartet">Book et møde</a>
+<a id="nav-cta-btn" class="waves-effect waves-light modal-trigger" href="#modal1">Book et møde</a>
 
 <div id="nav-icon">
   <span></span>
@@ -41,7 +41,7 @@
         <a href="/kontakt"><li><h2>Kontakt info<h2></li></a>
       <h4>Nye indlæg:</h4>
         {% for post in site.posts limit:5 %}
-            <a href="{{site.url}}{{ post.url }}"><li><h2>{{ post.title }}</h2></li></a>
+            <a href="{{ post.url }}"><li><h2 class="truncate">{{ post.title }}</h2></li></a>
         {% endfor %}
     </ul>
 </div>
@@ -67,21 +67,21 @@
                 <h3 class="flow-text">Nyt fra Optipeople</h3>
                 <ul class="flow-text">
                   {% for post in site.posts limit:5 %}
-                      <a href="{{site.url}}{{ post.url }}" class="truncate">{{ post.title }}</a>
+                      <a href="{{ post.url }}" class="truncate">{{ post.title }}</a>
                   {% endfor %}
                 </ul>
             </div>
             <div class="col s12 m6 l5">
-                <img src="{{site.url}}assets/uploads/logo.png" alt="Optipeople logo" style="padding:10% 20% 20% 20%;">
+                <img src="/assets/uploads/logo.png" alt="Optipeople logo">
             </div>
         </div>
         <div class="row">
             <div class="copyright">
                 <hr>
-                <div class="col s12 m6 l6">
+                <div class="col s6">
                    © Optipeople ApS
                 </div>
-                <div class="col s12 m6 l6">
+                <div class="col s6">
                     <a class="right" href="mailto:support@optipeople.dk" target="_blank">support@optipeople.dk</a>
                 </div>
             </div>
@@ -91,12 +91,30 @@
 
 </div>
 
-<!--JavaScript-->
-<script type="text/javascript" src="{{site.url}}assets/js/jquery331.js"></script>
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <a href="#!" class="modal-close waves-effect waves-green btn-flat">LUK</a>
+    <div class="row">
+      <div class="col s6 m4">
+        <img src="/assets/uploads/kim.png">
+      </div>
+      <div class="col s6 m6 push-m1">
+        <h5>Kim Dannesboe</h5>
+        <h6><a href="mailto:kda@optipeople.dk">kda@optipeople.dk</a><br><br>(+45) 23 74 47 05</h6>
+        <p>
+          For at starte din måling på produktionen, kontakt Kim Dannesboe i dag og hør hvordan vi kommer igang hurtigt og effektivt.<br><br>
+        </p>
+        <a href="mailto:kda@optipeople.dk" class="modal-cta">Start samtalen her</a>
+      </div>
+    </div>
+</div>
 
-<script type="text/javascript" src="{{site.url}}assets/js/materialize.min.js"></script>
-<script type="text/javascript" src="{{site.url}}assets/js/skrollr.js"></script>
-<script type="text/javascript" src="{{site.url}}assets/js/main.js"></script>
+<!--JavaScript-->
+<script type="text/javascript" src="/assets/js/jquery331.js"></script>
+
+<script type="text/javascript" src="/assets/js/materialize.min.js"></script>
+<script type="text/javascript" src="/assets/js/skrollr.js"></script>
+<script type="text/javascript" src="/assets/js/main.js"></script>
 
 
 <script>

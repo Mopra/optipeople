@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<main id="page">
+<main id="page"><div id="category">
 
   <div id="toolbar" class="hide-on-med-and-up" data-0="height:200px;" data-400="height: 200px;" style="background-image: url({{ site.url }}{{ page.image }});">
     <div class="toolar-bg" data-0="height:200px;background-color:rgba(2,6,8, 1);" data-200="height:200px;background-color:rgba(2,6,8, 1);">
     <div id="actions">
       <div class="icon">
-        <a href="{{ site.url }}" data-0="color:rgba(255,255,255,.5);" data-200="color:rgba(255,255,255,1);">Optipeople</a>
+        <a href="/" data-0="color:rgba(255,255,255,.5);" data-200="color:rgba(255,255,255,1);">Optipeople</a>
       </div>
       <div class="spacer"></div>
     </div>
@@ -27,7 +27,7 @@ layout: default
 
     <div id="actions">
       <div class="icon">
-        <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-200="color:rgba(255,255,255,1);">Optipeople</a>
+        <a href="/" data-0="color:rgba(255,255,255,1);" data-200="color:rgba(255,255,255,1);">Optipeople</a>
       </div>
 
       <div class="spacer"></div>
@@ -45,7 +45,7 @@ layout: default
   <div class="content-wrapper-category">
 
     <div id="breadcrumb">
-        Andre kategorier <br><br>
+        Alle kategorier <br><br>
       {% for category in site.categories %}
         <a class="chip" href="/{{ category[0] }}">{{ category[0] }}</a>
       {% endfor %}
@@ -58,9 +58,9 @@ layout: default
               {% for post in site.categories[page.tag] %}
                 <li>
                   <a href="{{site.url}}{{ post.url }}"><h2>{{ post.title }}</h2></a>
-                  <a href="{{site.url}}{{ post.url }}"><img src="{{site.url}}assets/uploads/{{ post.date | date: '%Y-%m-%d' }}-{{post.slug}}.jpg"></a>
+                  <a href="{{site.url}}{{ post.url }}"><img src="/assets/uploads/{{ post.date | date: '%Y-%m-%d' }}-{{post.slug}}.jpg"></a>
                   <p>{{ post.description }}</p>
-                  <a href="{{site.url}}{{ post.url }}" class="btn btn-large blue">Læs artikel</a>
+                  <a href="{{site.url}}{{ post.url }}" class="read-more waves-effect waves-light modal-trigger">Læs artikel</a>
                 </li>
                 <hr>
               {% endfor %}
@@ -70,4 +70,4 @@ layout: default
       </div>
   </div>
 
-</main>
+</div></main>

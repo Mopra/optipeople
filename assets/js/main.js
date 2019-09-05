@@ -15,4 +15,5 @@ $(document).ready(function () {
     $(this).toggleClass('open');
     $('#nav-content').toggleClass('active');
   });
+  $('.modal').modal();
 });
