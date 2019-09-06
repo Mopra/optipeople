@@ -71,7 +71,7 @@ permalink: /kontakt/
 
           <div class="col s12 m10 l4 push-m1">
             <div class="row">
-              <img src="/assets/uploads/kim.png">
+              <img src="/assets/uploads/Kim.png">
             </div>
             <div class="row">
               <h5>Kim Dannesboe</h5>
@@ -83,7 +83,7 @@ permalink: /kontakt/
           <div class="col s12 m10 l4 push-m1">
             <div class="row">
               <div class="underlay"></div>
-              <img src="/assets/uploads/morten.png">
+              <img src="/assets/uploads/Morten.png">
 
             </div>
             <div class="row">
@@ -95,7 +95,7 @@ permalink: /kontakt/
 
           <div class="col s12 m10 l4 push-m1">
             <div class="row">
-              <img src="/assets/uploads/kenneth.png">
+              <img src="/assets/uploads/Kenneth.png">
             </div>
             <div class="row">
               <h5>Kenneth Bech Sørensen</h5>
