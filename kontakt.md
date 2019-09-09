@@ -48,9 +48,25 @@ permalink: /kontakt/
         <div class="container">
             <div class="row">
                 <div class="col s12">
-                        <ul class="flow-text">
-                            <li class="center">Du kan ringe til os på (+45) 77 34 11 55 eller sende en email på support@optipeople.dk</li>
-                        </ul>
+                  <h4>Ring til os på (+45) 77 34 11 55 eller send en email på support@optipeople.dk</h4>
+                        <p class="flow-text">
+                        <br><br>
+<b>I prioriteres højest!</b>
+I kan altid komme i kontakt med os, når I har behov for det. Vi prioriterer dialog og service højt, hvilket afspejles i vores svartider. Vi svare på alle mails inden for 24 timer!
+<br><br>
+I kan altid få fat på os, når I har behov for det. Vi forstår, at tabt tid altid måles direkte i produktionens nøgletal, hvorfor et hurtigt svar kan være afgørende for jer.
+<br><br>
+<b>Samarbejdsmuligheder med vækst.</b>
+Vi har flere samarbejdsaftaler med produktionsvirksomheder, som alle har oplevet bedre produktionsstyring, mindre spildtid og øget oppetid. Ønsker I at høre mere om, hvordan jeres virksomhed kan vækste via et samarbejde med OptiPeople, kan I kontakte Kim Dannesboe via nedenstående kontaktinformation.
+<br><br>
+Kim Dannesboe, kda@optipeople.dk, +45 23 74 47 05
+<br><br>
+<b>Følg os på linkedIn</b>
+<br><br>
+Vi opdaterer jævnligt på LinkedIn med historier fra dagligdagen, nyheder om produktionsoptimering og de nyeste opdateringer fra vores produkter.
+<a href="https://www.linkedin.com/company/optipeople-aps" target="_blank">Gå til vores LinkeIn-profil her.</a>
+<br><br>
+                        </p>
                 </div>
             </div>
         </div>
