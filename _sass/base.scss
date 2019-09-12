@@ -54,9 +54,12 @@ img {
     vertical-align: middle;
 
     a {
-      font-style: normal;
-      font-weight: 600;
-
+      h1 {
+        margin:0; padding:0;
+        font-size:15px;
+        font-style: normal;
+        font-weight: 600;
+      }
       span {
         font-weight: 900;
       }
@@ -93,7 +96,7 @@ img {
   left:50%;
   margin-left:-40%;
 
-  h1 {
+  h2 {
     font-size: inherit;
     margin:0;padding:0;
 

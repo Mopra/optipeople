@@ -18,7 +18,7 @@ permalink: /kontakt/
         <div id="categories" class="" data-0="font-size: 16px; padding: 0 0 42px 0;" data-300="font-size: 16px; padding: 0 0 16px 0;">
           <!--Optipeople-->
         </div>
-        <h1 data-0="font-weight: 900;" data-300="font-weight: 900;">Informationer</h1>
+        <h2 data-0="font-weight: 900;" data-300="font-weight: 900;">Informationer</h2>
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@ permalink: /kontakt/
 
     <div id="actions">
       <div class="icon">
-        <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-300="color:rgba(255,255,255,1);">Optipeople</a>
+        <a href="{{ site.url }}" data-0="color:rgba(255,255,255,1);" data-300="color:rgba(255,255,255,1);"><h1>Optipeople</h1></a>
       </div>
 
     </div>
@@ -37,7 +37,7 @@ permalink: /kontakt/
       <div id="categories" class="" data-0="font-size: 16px; padding: 0 0 42px 0;" data-300="font-size: 16px; padding: 0 0 32px 0;">
         <img src="/assets/uploads/logo.png" class="logo" alt="Optipeople logo" >
       </div>
-      <h1 data-0="font-weight: 900;" data-300="font-weight: 900;">Informationer</h1>
+      <h2 data-0="font-weight: 900;" data-300="font-weight: 900;">Informationer</h2>
     </div>
     </div>
   </div>
