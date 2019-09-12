@@ -3,7 +3,7 @@ $(document).ready(function () {
     smoothScrolling: true,
   });
   $( ".section-nav" ).addClass( "pushpin table-of-contents" );
-  $( ".toc-entry" ).addClass( "truncate toc-arrow" );
+  $( ".toc-entry" ).addClass( "toc-arrow" );
   $('.scrollspy').scrollSpy();
   $('.pushpin').pushpin({
     top: 530

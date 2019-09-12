@@ -10,3 +10,8 @@
         "page",
         "post"
 ;
+
+//Overrides
+.flow-text, p, ul li, .flow-text a {
+  font-size: 20px !important;
+}
