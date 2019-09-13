@@ -30,3 +30,4 @@ plugins:  #Custom plugins
 toc: #from the jekyll toc plugin
   min_level: 2 # default: 1
   max_level: 2 # default: 6
+include: ['_pages']

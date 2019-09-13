@@ -1,6 +1,7 @@
 #page {
 
 .content-wrapper { padding-top: 450px; }
+.content-wrapper-landing { padding-top: 250px; }
 .content-wrapper-category { padding-top: 250px; }
 
 img {
@@ -364,3 +365,99 @@ img {
 /*TOC END*/
 
 } //End
+
+.landing {
+
+  #toolbar.hide-on-med-and-up {
+    h2 { font-size:36px; }
+  }
+  #toolbar.hide-on-small-only {
+    h2 { }
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 900;
+    text-align:center;
+    @media (max-width:1300px) { padding: 0 0 5vh 0; }
+  }
+  section {  }
+
+  #cards {
+    padding: 5vh 10vw;
+    @media (max-width:1300px) { padding: 5vh 5vw; }
+
+    .col {
+      padding: 50px 50px 0 50px;
+      @media (max-width:1300px) { padding: 25px 25px 0 25px; }
+    }
+    h5 {
+      font-size:22px;
+      font-weight: 900;
+    }
+
+  }
+
+  #contact {
+
+    .fix-container {
+      width:1180px;
+      margin: 0 auto;
+      @media (max-width:1300px) {
+        width:100%;
+        padding: 0 5vw;
+      }
+    }
+
+    .row {
+      div { padding: 0 30px; }
+    }
+
+    .headline {
+      padding: 10vh 0;
+      width:100%;
+      text-align: center;
+      color:#000;
+
+      &:after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 10%;
+        padding-top: 20px;
+        border-bottom: 3px solid #2948ff;
+        border-radius: 3px;
+      }
+      @media (max-width:600px) { padding: 5vh 0; }
+
+    }
+
+    h5 {
+      margin-top:50px;
+      @media (max-width:1300px) { margin-top:20px; }
+      @media (max-width:600px) { margin-top:20px; }
+    }
+
+    img {
+
+    }
+
+    .landing-cta {
+        padding: 6px 24px;
+        background-image: linear-gradient(to right, #396afc, #2948ff);
+        color:#fff;
+        border-radius: 6px;
+        font-size: 1em;
+        font-weight: 600;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+    }
+
+  }
+
+}
