@@ -1,6 +1,7 @@
 html,body {
   background-color:#fff;
   touch-action: none; /*Fix Chrome touch scroll errors*/
+  height:auto !important; /*Fix Chrome touch scroll errors*/
 }
 .row .col {position: relative;}
 

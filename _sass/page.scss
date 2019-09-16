@@ -1,7 +1,7 @@
 #page {
 
 .content-wrapper { padding-top: 450px; }
-.content-wrapper-landing { padding-top: 250px; }
+.content-wrapper-landing { padding-top: 400px; }
 .content-wrapper-category { padding-top: 250px; }
 
 img {
@@ -398,6 +398,16 @@ img {
 
   }
 
+  .ctaHeadSection {
+    padding: 5vh 0;
+    div {
+      height:450px;
+      @media (max-width:992px) {
+        height:auto;
+      }
+    }
+  }
+
   #contact {
 
     .fix-container {
@@ -441,6 +451,7 @@ img {
     img {
 
     }
+
 
     .landing-cta {
         padding: 6px 24px;
