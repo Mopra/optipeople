@@ -257,6 +257,118 @@ img {
   }
 }
 
+#faq {
+  padding: 5vh 0 15vh 0;
+  background-color:#e6f2f9;
+
+  .headline {
+    padding: 10vh 0;
+    width:100%;
+    text-align: center;
+    color:#000;
+
+    &:after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 10%;
+      padding-top: 20px;
+      border-bottom: 3px solid #2948ff;
+      border-radius: 3px;
+    }
+    @media (max-width:600px) {
+      padding: 5vh 0;
+    }
+  }
+  .collapsible-body {
+    background-color:#fff;
+  }
+}
+
+#releases {
+  padding: 5vh 0 15vh 0;
+  background-color:#020608;
+
+  .headline {
+    padding: 10vh 0;
+    width:100%;
+    text-align: center;
+    color:#fff;
+
+    &:after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 10%;
+      padding-top: 20px;
+      border-bottom: 3px solid #2948ff;
+      border-radius: 3px;
+    }
+    @media (max-width:600px) {
+      padding: 5vh 0;
+    }
+  }
+  .collapsible-body {
+    background-color:#fff;
+  }
+
+  h2 {
+    font-weight: 900;
+    font-size:2em;
+  }
+  a { color:#fff; }
+  .releaseWrapper {
+    padding:5vh 2vw,
+  }
+  .releaseCard {
+    position: relative;
+    padding:20px;
+    width:100%;
+    height:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+    box-shadow: 0 19px 68px rgba(0,0,0,0.30), 0 15px 68px rgba(0,0,0,0.22);
+    transition: all .2s;
+
+    &:hover {
+      box-shadow: 0 9px 28px rgba(0,0,0,0.40), 0 5px 28px rgba(0,0,0,0.32);
+    }
+
+    h3 {
+      font-size:2em;
+      font-weight: 900;
+      width:80%;
+      @media (max-width:1600px) { font-size:1.9em; }
+      @media (max-width:1500px) { font-size:1.8em; }
+      @media (max-width:1400px) { font-size:1.7em; }
+      @media (max-width:1300px) { font-size:1.6em; }
+      @media (max-width:600px) { font-size:3em; }
+    }
+    p {
+      font-weight: 100;
+      width:80%;
+      @media (max-width:1600px) { font-size: 20px !important; }
+      @media (max-width:1500px) { font-size: 18px !important; }
+      @media (max-width:1400px) { font-size: 17px !important; }
+      @media (max-width:1300px) { font-size: 16px !important; }
+      @media (max-width:1300px) { font-size: 15px !important; }
+      @media (max-width:600px) { font-size: 20px !important; }
+    }
+    .btn {
+      position: absolute;
+      bottom:40px;
+      right:40px;
+      color:#020608;
+      border-radius: 5px;
+      background-color:#fff;
+      box-shadow: 0 19px 68px rgba(0,0,0,0.30), 0 15px 68px rgba(0,0,0,0.22);
+    }
+
+  }
+}
+
 #team {
   padding: 10vh 0 5vh 0;
 
@@ -281,7 +393,6 @@ img {
     @media (max-width:600px) {
       padding: 5vh 0;
     }
-
   }
 
   p {

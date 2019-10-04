@@ -16,4 +16,5 @@ $(document).ready(function () {
     $('#nav-content').toggleClass('active');
   });
   $('.modal').modal();
+  $('.collapsible').collapsible();
 });

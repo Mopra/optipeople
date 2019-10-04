@@ -172,6 +172,99 @@ image: /assets/uploads/header.jpg
     </section>
 
 
+    <section id="faq" class="scrollspy">
+        <div class="container">
+
+          <div class="row">
+            <h5 class="headline">FAQ</h5>
+          </div>
+
+            <div class="row">
+                <div class="col s12 m12 l12">
+                  <ul class="collapsible popout">
+                    <li class="active">
+                      <div class="collapsible-header"><i class="material-icons">equalizer</i>
+Hvordan måler Optipeople maskinerne?
+                      </div>
+                      <div class="collapsible-body"><span>
+CNC-maskiner, ekstruderingsmaskiner, svejseapparater, robotter, væve, og listen kunne fortsætte. Hos Optipeople kan vi måle på alle slags maskiner. Alt med en sensor eller PLC der kan give et signal, kan du få data fra. Derfor er det også uden betydning hvor gammelt/nyt det du vil måle på er.<br><br>
+Drift signalerne fra maskinen bliver opsamlet i vores datalogger. Dataloggeren er en lille boks (10x7cm) med fire digitale og fire analoge indgange. Den kan let monteres i en el-tavle med en 24 volts forsyning.<br><br>
+Når dataloggeren er monteret og forsynet med signaler fra maskinen, tager vores portal sig af resten. I portalen har du så det komplet overblik over alle dine maskiner, deres oppetid/nedetid, stopårsager, emner, OEE og meget andet.
+                      </span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">wifi</i>
+Hvordan er dataloggeren forbundet til nettet?
+                      </div>
+                      <div class="collapsible-body"><span>
+Dataloggeren der forsyner portalen med data, kan kobles på enten Wifi, GSM (mobilnet) eller Ethernet.
+Der er fordele og ulemper ved dem alle, og det er meget forskelligt hvad der kommer til at virke bedst for jer. Den mest stabile og oftest brugte løsning, er et direkte internet kabel altså Ethernet.
+<br><br>
+For at finde den bedste løsning på forbindelsen gør vi følgende:<br><br>
+-	Vurdere miljøet på fabrikken, er det åbent (indendørs/udendørs), kan der være støj, har i allerede ethernet/wifi osv.<br>
+-	Snakker eventuelt med jeres IT omkring installation og sikkerhed på netværket.<br>
+-	Installerer den passende løsning.
+                      </span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">widgets</i>
+Hvad skal jeg bruge for at begynde min måling?
+                      </div>
+                      <div class="collapsible-body"><span>
+1.	Dataloggeren får du tilsendt fra os.<br>
+2.	Ethernet kabel, Wifi tilslutning, eller et GSM-modem med simkort.<br>
+3.	En elektriker der kan installere signalerne fra sensoren, maskinen eller plc’en (Dette kan vi også levere).<br>
+4.	En computer eller tablet til operatøren.
+                      </span></div>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="releases" class="scrollspy">
+      <div class="container">
+          <div class="row">
+            <h5 class="headline">Releases</h5>
+          </div>
+          <div class="row">
+
+            {% for post in site.categories.ledelse %}
+              <div class="col s12 m6 l4 releaseWrapper">
+                <a href="{{ post.url }}">
+                  <div class="releaseCard" style="background:linear-gradient(rgba(2, 6, 8, .5),rgba(2, 6, 8, .7)),url(/assets/uploads/{{ post.date | date: '%Y-%m-%d' }}-{{post.slug}}.jpg);">
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.description }}</p>
+                    <a class="btn" href="{{ post.url }}">Læs artiklen</a>
+                  </div>
+                </a>
+              </div>
+              {% endfor %}
+
+          </div>
+
+          <div class="row">
+
+            {% for post in site.categories.ledelse %}
+              <div class="col s12 m6 l4 releaseWrapper">
+                <a href="{{ post.url }}">
+                  <div class="releaseCard" style="background:linear-gradient(rgba(2, 6, 8, .5),rgba(2, 6, 8, .7)),url(/assets/uploads/{{ post.date | date: '%Y-%m-%d' }}-{{post.slug}}.jpg);">
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.description }}</p>
+                    <a class="btn" href="{{ post.url }}">Læs artiklen</a>
+                  </div>
+                </a>
+              </div>
+              {% endfor %}
+
+          </div>
+
+      </div>
+    </section>
+
+
     <section id="team" class="scrollspy">
       <div class="container">
 
