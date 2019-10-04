@@ -24,9 +24,12 @@
 }
 
 .hi-btn {
-  right:275px !important;
+  right:315px !important;
   background-image: linear-gradient(to right, #d4d4d4, #e8e8e8) !important;
   color: #000 !important;
+  @media (max-width:1200px) {
+    display:none;
+  }
 }
 
 #nav-icon {
