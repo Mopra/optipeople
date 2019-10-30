@@ -25,86 +25,115 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas quam eget
       </div>
 
       <div class="row">
-      <div class="col s12 m12 l6">
+        <div class="col s12 m12 l6 leftPos">
+
+        <div class="row">
+          <h4>
+            Hvordan ser din produktion ud nu?
+          </h4>
+        </div>
+
+          <div class="row calcInput">
+            <div class="hours input-field">
+                <input type="number" name="h" id="hours" data-length="2" />
+                <label for="hours">Antal produktionstimer pr. dag</label><br>
+            </div>
+            <div class="cost input-field">
+                <input type="number" name="c" id="cost" data-length="6" />
+                <label for="cost">Pris pr. tabt produktionstime</label><br>
+            </div>
+            <div class="availability input-field">
+                <input type="number" name="a" id="availability" data-length="2" />
+                <label for="availability">Tilgængelighed/availability %</label><br>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col s12 m12 l6 rightPos">
+
+          <div class="row">
+            <h4>
+              Fremtiddig gevinst ved øget tilgængelighed
+            </h4>
+          </div>
+
+          <div class="row calcInput">
+            <div class="futureAvailability input-field">
+                <input type="number" name="fa" id="futureAvailability" data-length="2" />
+                <label for="futureAvailability">Ønsket tilgængelighed/availability %</label><br>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="row" id="completeResult">
+      <div class="col s12 m12 l6 leftPos">
+
+        <div class="row">
+          <div class="col s12 result">
+            <p>Pris i tabt produktionstid pr. dag:</p>
+            <div class="clpDay"></div>
+          </div>
+          <div class="col s12 m6 result">
+            <p>pr. uge:</p>
+            <div class="clpWeek"></div>
+          </div>
+          <div class="col s12 m6 result">
+            <p>pr. år:</p>
+            <div class="clpYear"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col s12 m12 l6 rightPos">
+
+        <div class="row">
+          <div class="col s12 result">
+            <p>Pris i tabt produktionstid pr. dag:</p>
+            <div class="fclpDay"></div>
+          </div>
+          <div class="col s12 m6 result">
+            <p>pr. uge:</p>
+            <div class="fclpWeek"></div>
+          </div>
+          <div class="col s12 m6 result">
+            <p>pr. år:</p>
+            <div class="fclpYear"></div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+      <div class="row" id="buttons">
+      <div class="col s12 m12 l6 leftPos">
 
       <div class="row">
-        <h3>
-          Hvordan ser din produktion ud nu?
-        </h3>
+       <button type="button" class="calculate btn btn-large">Udregn</button>
       </div>
-
-        <div class="row" id="calcInput">
-          <div class="hours">
-              <label>Antal produktionstimer pr. dag</label><br>
-              <input type="text" name="h" autofocus />
-          </div>
-          <div class="cost">
-              <label>Pris pr. tabt produktionstime</label><br>
-              <input type="text" name="c" autofocus />
-          </div>
-          <div class="availability">
-              <label>Tilgængelighed / Availability</label><br>
-              <input type="text" name="a" autofocus />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col s12 m4">
-            <p>Pris i tabt produktionstid pr. dag</p><br>
-            <div class="clpDay"></div>
-          </div>
-          <div class="col s12 m4">
-            <p>pr. uge</p><br>
-            <div class="clpWeek"></div>
-          </div>
-          <div class="col s12 m4">
-            <p>pr. år</p><br>
-            <div class="clpYear"></div>
-          </div>
-        </div>
-
-        <div class="row">
-         <button type="button" class="calculate btn btn-large blue">Udregn</button>
-        </div>
 
       </div>
 
-      <div class="col s12 m12 l6">
+      <div class="col s12 m12 l6 rightPos">
 
-        <div class="row">
-          <h3 class="grey-text">
-            Fremtiddig gevinst ved øget tilgængelighed * virker ikke endnu
-          </h3>
-        </div>
-
-        <div class="row" id="calcInput">
-          <div class="availability">
-              <label>Tilgængelighed / Availability</label><br>
-              <input type="text" name="a" autofocus />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col s12 m4">
-            <p>Pris i tabt produktionstid pr. dag</p><br>
-            <div class="clpDay"></div>
-          </div>
-          <div class="col s12 m4">
-            <p>pr. uge</p><br>
-            <div class="clpWeek"></div>
-          </div>
-          <div class="col s12 m4">
-            <p>pr. år</p><br>
-            <div class="clpYear"></div>
-          </div>
-        </div>
-
-        <div class="row">
-         <button type="button" class="calculate btn btn-large blue">Udregn</button>
-        </div>
+      <div class="row">
+       <button type="button" class="fcalculate btn btn-large blue">Udregn</button>
+      </div>
 
       </div>
       </div>
+
+
+
+
+
+
+
 
     </div>
   </section>

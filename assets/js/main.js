@@ -17,7 +17,7 @@ $(document).ready(function () {
   });
   $('.modal').modal();
   $('.collapsible').collapsible();
-
+  $('input').characterCounter();
 
   $(".calculate").click(function() {
 
@@ -27,18 +27,23 @@ $(document).ready(function () {
 
       var hTa = h * a;
 
-      var week = h * '7';
-      var year = h * '365';
+      var week = '5';
+      var year = '350';
 
-      var clpDay = (h - hTa) * c;
-      var clpWeek = (week - hTa) * c;
-      var clpYear = (year - hTa) * c;
+      var hMhTa = h - hTa;
+      var hMhTaC = hMhTa * c;
 
+      var clpDay = hMhTaC;
+      var clpWeek = hMhTaC * week;
+      var clpYear = hMhTaC * year;
 
       $('.clpDay').html(Intl.NumberFormat('da-DK').format(clpDay));
       $('.clpWeek').html(Intl.NumberFormat('da-DK').format(clpWeek));
       $('.clpYear').html(Intl.NumberFormat('da-DK').format(clpYear));
 
+      $( "#completeResult" ).slideToggle( "slow" );
+
   });
+
 
 });

@@ -610,10 +610,51 @@ img {
 
     padding: 10vh 0 0 0;
 
-    #calcInput {
+    h4 {
+      font-size:22px;
+      font-weight: 900;
+    }
 
-      padding: 5vh 20px 0 20px;
+    .leftPos .row, .rightPos .row { margin:0;padding:0; }
+    .leftPos .col, .rightPos .col { margin:0;padding:0; }
+    .leftPos {
+      padding: 0 50px 0 0;
+    }
+    .rightPos {
+      padding: 0 0 0 50px;
+    }
 
+    .result > div {
+      font-weight: 900;
+      text-decoration: underline;
+
+      &:before {
+        content: "Kr. ";
+      }
+      &:after {
+        content: ",-";
+      }
+    }
+
+    button {
+      margin: 5vh 0;
+      text-align: center;
+      background-image: linear-gradient(to right, #0089ff, #2948ff);
+      color:#fff;
+      border-radius: 12px;
+      font-size: 1.1em;
+      font-weight: 300;
+      box-shadow: 0 16px 24px 2px rgba(41, 72, 255, 0.15), 0 6px 30px 5px rgba(41, 72, 255, 0.2), 0 8px 10px -7px rgba(41, 72, 255, 0.1);
+      transition: all .2s;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 8px 17px 2px rgba(41, 72, 255, 0.1), 0 3px 14px 2px rgba(41, 72, 255, 0.1), 0 5px 5px -3px rgba(41, 72, 255, 0.1);
+      }
+    }
+
+    #completeResult {
+      display:none;
     }
 
   }
