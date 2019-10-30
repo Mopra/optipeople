@@ -50,7 +50,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas quam eget
 
         </div>
 
-        <div class="col s12 m12 l6 rightPos">
+        <div class="col s12 m12 l6 rightPos hide-on-med-and-down">
 
           <div class="row">
             <h4>
@@ -90,7 +90,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas quam eget
 
       </div>
 
-      <div class="col s12 m12 l6 rightPos">
+      <div class="col s12 m12 l6 rightPos hide-on-med-and-down">
 
         <div class="row">
           <div class="col s12 result">
@@ -119,7 +119,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas quam eget
 
       </div>
 
-      <div class="col s12 m12 l6 rightPos">
+      <div class="col s12 m12 l6 rightPos hide-on-med-and-down">
 
       <div class="row">
        <button type="button" class="fcalculate btn btn-large blue">Udregn</button>
