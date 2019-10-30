@@ -17,4 +17,28 @@ $(document).ready(function () {
   });
   $('.modal').modal();
   $('.collapsible').collapsible();
+
+
+  $(".calculate").click(function() {
+
+      var h = $('input[name="h"]').val();
+      var c = $('input[name="c"]').val();
+      var a = $('input[name="a"]').val() / 100;
+
+      var hTa = h * a;
+
+      var week = h * '7';
+      var year = h * '365';
+
+      var clpDay = (h - hTa) * c;
+      var clpWeek = (week - hTa) * c;
+      var clpYear = (year - hTa) * c;
+
+
+      $('.clpDay').html(Intl.NumberFormat('da-DK').format(clpDay));
+      $('.clpWeek').html(Intl.NumberFormat('da-DK').format(clpWeek));
+      $('.clpYear').html(Intl.NumberFormat('da-DK').format(clpYear));
+
+  });
+
 });
