@@ -45,5 +45,26 @@ $(document).ready(function () {
 
   });
 
+  $(".fcalculate").click(function() {
+
+      var fa = $('input[name="fa"]').val() / 100;
+
+      var fhTa = h * fa;
+
+      var fhMhTa = h - fhTa;
+      var fhMhTaC = fhMhTa * c;
+
+      var fclpDay = fhMhTaC;
+      var fclpWeek = fhMhTaC * week;
+      var fclpYear = fhMhTaC * year;
+
+      $('.clpDay').html(Intl.NumberFormat('da-DK').format(clpDay));
+      $('.clpWeek').html(Intl.NumberFormat('da-DK').format(clpWeek));
+      $('.clpYear').html(Intl.NumberFormat('da-DK').format(clpYear));
+
+      $( "#fcompleteResult" ).slideToggle( "slow" );
+
+  });
+
 
 });

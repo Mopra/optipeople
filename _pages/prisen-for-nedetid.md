@@ -36,7 +36,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas quam eget
           <div class="row calcInput">
             <div class="hours input-field">
                 <input type="number" name="h" id="hours" data-length="2" />
-                <label for="hours">Antal produktionstimer pr. dag</label><br>
+                <label for="hours">Antal max. tilgængelige produktionstimer pr. dag</label><br>
             </div>
             <div class="cost input-field">
                 <input type="number" name="c" id="cost" data-length="6" />
@@ -46,6 +46,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas quam eget
                 <input type="number" name="a" id="availability" data-length="2" />
                 <label for="availability">Tilgængelighed/availability %</label><br>
             </div>
+            <!--<div class="availability input-field">
+                <input type="number" name="a" id="availability" data-length="2" />
+                <label for="availability">Tilgængelighed/availability %</label><br>
+            </div>-->
           </div>
 
         </div>
@@ -70,8 +74,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas quam eget
 
 
 
-      <div class="row" id="completeResult">
-      <div class="col s12 m12 l6 leftPos">
+      <div class="row">
+      <div class="col s12 m12 l6 leftPos" id="completeResult">
 
         <div class="row">
           <div class="col s12 result">
@@ -90,7 +94,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas quam eget
 
       </div>
 
-      <div class="col s12 m12 l6 rightPos hide-on-med-and-down">
+      <div class="col s12 m12 l6 rightPos hide-on-med-and-down" id="fcompleteResult">
 
         <div class="row">
           <div class="col s12 result">
