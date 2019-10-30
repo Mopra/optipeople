@@ -3,7 +3,7 @@ layout: landing
 title:  "Optipeople | Turning data into decisions"
 description: "asdf"
 image: /assets/uploads/fordele.jpg
-permalink: /prisen-for-nedetid/
+permalink: /prisen-for-nedetid-ny/
 heading: "Hvad koster nedetid?"
 ---
 
