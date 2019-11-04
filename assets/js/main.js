@@ -21,33 +21,34 @@ $(document).ready(function () {
 
   $(".calculate").click(function() {
 
-      var h = $('input[name="h"]').val();
-      var c = $('input[name="c"]').val();
-      var a = $('input[name="a"]').val() / 100;
+      h = $('input[name="h"]').val();
+      c = $('input[name="c"]').val();
+      a = $('input[name="a"]').val() / 100;
 
-      var hTa = h * a;
+      hTa = h * a;
 
-      var week = '5';
-      var year = '350';
+      week = '5';
+      year = '350';
 
-      var hMhTa = h - hTa;
-      var hMhTaC = hMhTa * c;
+      hMhTa = h - hTa;
+      hMhTaC = hMhTa * c;
 
-      var clpDay = hMhTaC;
-      var clpWeek = hMhTaC * week;
-      var clpYear = hMhTaC * year;
+      clpDay = hMhTaC;
+      clpWeek = hMhTaC * week;
+      clpYear = hMhTaC * year;
 
       $('.clpDay').html(Intl.NumberFormat('da-DK').format(clpDay));
       $('.clpWeek').html(Intl.NumberFormat('da-DK').format(clpWeek));
       $('.clpYear').html(Intl.NumberFormat('da-DK').format(clpYear));
 
-      $( "#completeResult" ).slideToggle( "slow" );
+    //  $( "#completeResult" ).slideToggle( "slow" );
 
   });
 
+
   $(".fcalculate").click(function() {
 
-      var fa = $('input[name="fa"]').val() / 100;
+      fa = $('input[name="fa"]').val() / 100;
 
       var fhTa = h * fa;
 
@@ -58,13 +59,43 @@ $(document).ready(function () {
       var fclpWeek = fhMhTaC * week;
       var fclpYear = fhMhTaC * year;
 
-      $('.clpDay').html(Intl.NumberFormat('da-DK').format(clpDay));
-      $('.clpWeek').html(Intl.NumberFormat('da-DK').format(clpWeek));
-      $('.clpYear').html(Intl.NumberFormat('da-DK').format(clpYear));
+      var fclpDayGainTrue = fclpDay - clpDay;
+      var fclpDayGainFalse = fclpDay - clpDay;
 
-      $( "#fcompleteResult" ).slideToggle( "slow" );
+      var fclpWeekGainTrue = fclpWeek - clpWeek;
+      var fclpWeekGainFalse = clpWeek - fclpWeek;
+
+      var fclpYearGainTrue = fclpYear - clpYear;
+      var fclpYearGainFalse = fclpYear - clpYear;
+
+      $('.fclpDay').html(Intl.NumberFormat('da-DK').format(fclpDay));
+      $('.fclpWeek').html(Intl.NumberFormat('da-DK').format(fclpWeek));
+      $('.fclpYear').html(Intl.NumberFormat('da-DK').format(fclpYear));
+
+
+      if (fclpDay > clpDay) {
+        $('.fclpDayGain').html(Intl.NumberFormat('da-DK').format(fclpDayGainFalse));
+      }else{
+        $('.fclpDayGain').html(Intl.NumberFormat('da-DK').format(fclpDayGainTrue));
+      }
+
+      if (fclpWeek > clpWeek) {
+        $('.fclpWeekGain').html(Intl.NumberFormat('da-DK').format(fclpWeekGainTrue));
+      }else{
+        $('.fclpWeekGain').html(Intl.NumberFormat('da-DK').format(fclpWeekGainFalse));
+      }
+
+      if (fclpDay > clpDay) {
+        $('.fclpYearGain').html(Intl.NumberFormat('da-DK').format(fclpYearGainTrue));
+      }else{
+        $('.fclpYearGain').html(Intl.NumberFormat('da-DK').format(fclpYearGainFalse));
+      }
+
+    //  $( "#completeResult" ).slideToggle( "slow" );
 
   });
+
+
 
 
 });

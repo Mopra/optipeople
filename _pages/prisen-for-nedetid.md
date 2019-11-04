@@ -62,82 +62,75 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas quam eget
             </h4>
           </div>
 
-          <div class="row calcInput">
-            <div class="futureAvailability input-field">
-                <input type="number" name="fa" id="futureAvailability" data-length="2" />
-                <label for="futureAvailability">Ønsket tilgængelighed/availability %</label><br>
+            <div class="row calcInput">
+              <div class="availability input-field">
+                  <input type="number" name="fa" id="favailability" data-length="2" />
+                  <label for="favailability">Tilgængelighed/availability %</label><br>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="row">
+
+        <div class="col s12 m12 l6 leftPos" id="completeResult">
+          <div class="row">
+            <div class="col s12 result">
+              <p>Pris i tabt produktionstid pr. dag:</p>
+              <div class="clpDay"></div>
+            </div>
+            <div class="col s12 m6 result">
+              <p>pr. uge:</p>
+              <div class="clpWeek"></div>
+            </div>
+            <div class="col s12 m6 result">
+              <p>pr. år:</p>
+              <div class="clpYear"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m12 l6 rightPos hide-on-med-and-down" id="fcompleteResult">
+
+          <div class="row">
+            <div class="col s12 result">
+              <p>Pris i tabt produktionstid pr. dag:</p>
+              <div class="fclpDay"></div><div class="fclpDayGain"></div>
+            </div>
+            <div class="col s12 m6 result">
+              <p>pr. uge:</p>
+              <div class="fclpWeek"></div><div class="fclpWeekGain"></div>
+            </div>
+            <div class="col s12 m6 result">
+              <p>pr. år:</p>
+              <div class="fclpYear"></div><div class="fclpYearGain"></div>
             </div>
           </div>
 
         </div>
-      </div>
 
-
-
-      <div class="row">
-      <div class="col s12 m12 l6 leftPos" id="completeResult">
-
-        <div class="row">
-          <div class="col s12 result">
-            <p>Pris i tabt produktionstid pr. dag:</p>
-            <div class="clpDay"></div>
-          </div>
-          <div class="col s12 m6 result">
-            <p>pr. uge:</p>
-            <div class="clpWeek"></div>
-          </div>
-          <div class="col s12 m6 result">
-            <p>pr. år:</p>
-            <div class="clpYear"></div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col s12 m12 l6 rightPos hide-on-med-and-down" id="fcompleteResult">
-
-        <div class="row">
-          <div class="col s12 result">
-            <p>Pris i tabt produktionstid pr. dag:</p>
-            <div class="fclpDay"></div>
-          </div>
-          <div class="col s12 m6 result">
-            <p>pr. uge:</p>
-            <div class="fclpWeek"></div>
-          </div>
-          <div class="col s12 m6 result">
-            <p>pr. år:</p>
-            <div class="fclpYear"></div>
-          </div>
-        </div>
-
-      </div>
       </div>
 
       <div class="row" id="buttons">
-      <div class="col s12 m12 l6 leftPos">
+        <div class="col s12 m12 l6 leftPos">
 
-      <div class="row">
-       <button type="button" class="calculate btn btn-large">Udregn</button>
+        <div class="row">
+         <button type="button" class="calculate btn btn-large">Udregn</button>
+        </div>
+
+        </div>
+
+        <div class="col s12 m12 l6 rightPos hide-on-med-and-down">
+
+        <div class="row">
+         <button type="button" class="fcalculate btn btn-large blue">Udregn</button>
+        </div>
+
+        </div>
       </div>
-
-      </div>
-
-      <div class="col s12 m12 l6 rightPos hide-on-med-and-down">
-
-      <div class="row">
-       <button type="button" class="fcalculate btn btn-large blue">Udregn</button>
-      </div>
-
-      </div>
-      </div>
-
-
-
-
-
-
-
 
     </div>
   </section>
