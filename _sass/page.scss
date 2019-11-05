@@ -624,15 +624,42 @@ img {
       padding: 0 0 0 50px;
     }
 
+    /*.week {
+      width:45%;
+      float:left;
+    }
+    .year {
+      width:45%;
+      float: right;
+    }*/
+
     .result > div {
       font-weight: 900;
       text-decoration: underline;
+      float:left;
 
       &:before {
         content: "Kr. ";
       }
       &:after {
         content: ",-";
+      }
+    }
+
+    .fclpDayGain, .fclpWeekGain, .fclpYearGain {
+      margin-left:20px;
+    }
+    .fclpTrue {
+      color:Green;
+
+      &:before {
+        content:"Kr. +" !important;
+      }
+    }
+    .fclpFalse {
+      color:red;
+      &:before {
+        content:"Kr. -" !important;
       }
     }
 
@@ -654,7 +681,7 @@ img {
     }
 
     #completeResult, #fcompleteResult {
-      display:block;
+      display:none;
     }
 
   }
