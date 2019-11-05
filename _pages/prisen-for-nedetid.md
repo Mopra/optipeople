@@ -46,10 +46,10 @@ Tilgængelighed/Availability - Her skal du tage stilling til, hvor stor en proce
                 <input type="number" name="a" id="availability" data-length="2" />
                 <label for="availability">Tilgængelighed/availability %</label><br>
             </div>
-            <!--<div class="availability input-field">
-                <input type="number" name="a" id="availability" data-length="2" />
-                <label for="availability">Tilgængelighed/availability %</label><br>
-            </div>-->
+            <div class="week input-field">
+                <input type="number" name="week" id="week" data-length="2" />
+                <label for="week">Arbejdsdage pr. uge</label><br>
+            </div>
           </div>
 
         </div>
@@ -63,7 +63,7 @@ Tilgængelighed/Availability - Her skal du tage stilling til, hvor stor en proce
           </div>
 
             <div class="row calcInput">
-              <div class="availability input-field">
+              <div class="availabili ty input-field">
                   <input type="number" name="fa" id="favailability" data-length="2" />
                   <label for="favailability">Ønsket fremtiddig tilgængelighed/availability %</label><br>
               </div>
