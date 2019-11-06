@@ -19,6 +19,7 @@ Hvor meget koster maskinernes nedetid i produktionen? Fra vores kunder hører vi
 Antal max. tilgængelige produktionstimer pr. dag tager udgangspunkt i hvor mange timer maskinerne max. kan køre pr. dag - eksempel: Døgnet har 24 timer, så det er udgangspunktet, men hvis vi kun har 2 skiftehold af 8 timer hver, så er vi nede på max. 16 timers tilgængelighed. Hvis der på hver af de 2 skiftehold er 30 minutters "tilladt" pause, hvor maskinerne holder stille, så er vi nede på max. 15 timers tilgængelig tid.
 <br><br>
 Tilgængelighed/Availability - Her skal du tage stilling til, hvor stor en procentdel af maskinens max. tilgængelighed, der udnyttes. Hvis du f.eks. tror at maskinen max. har en oppetid på 70% vil det med ovenstående eksempel betyde at den effektive produktionstid for maskinen pr. døgn er: 15*0,70=10,5 timer.
+<br>
         </p>
       </div>
 
