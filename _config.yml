@@ -2,7 +2,7 @@ title: Optipeople
 description: >- # Ignore lines up to next function
   Producerer din virksomhed optimalt hver eneste dag og på hver eneste maskine?
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://mopra.dk/optipeople/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://optipeople.dk" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:categories/:title/
 name: /OptiPeople
 assetpath: /assets/uploads/
