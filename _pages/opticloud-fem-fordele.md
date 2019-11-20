@@ -44,7 +44,7 @@ Du kan se hvor godt det går i produktionen fra din mobiltelefon, på en PC elle
       <div class="col s12 m12 l4">
         <h5>Analyse og forbedringer.</h5>
         <p>
-  Data er godt, men overblik er endnu bedre. Opticloud indeholder overskuelige standardrapporter, og kan også eksportere data til Microsoft Power BI og tilsvarende systemer. Det gør det muligt at analysere og forbedre produktionen. Det sikrer også at du har beslutningsgrundlaget for fremtidige investeringer.
+  Data er godt, men overblik er endnu bedre. Opticloud indeholder overskuelige standardrapporter og kan også eksportere data til Microsoft Power BI og tilsvarende systemer. Det gør det muligt at analysere og forbedre produktionen. Det sikrer også, at du har beslutningsgrundlaget for fremtidige investeringer.
         </p>
       </div>
 
@@ -61,7 +61,7 @@ Vi udvikler systemet i tæt samarbejde med brugerne og sørger for, at der løbe
       <div class="col s12 m6 l4">
         <h5>Mobilitet.</h5>
         <p>
-  Når du ikke er på fabrikken har du adgang til alle data via en browser og dit login.
+  Når du ikke er på fabrikken, har du adgang til alle data via en browser og dit login.
         </p>
       </div>
 

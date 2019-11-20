@@ -52,7 +52,7 @@ permalink: /kontakt/
                         <p class="flow-text">
                         <br><br>
 <b>I prioriteres højest!</b>
-I kan altid komme i kontakt med os, når I har behov for det. Vi prioriterer dialog og service højt, hvilket afspejles i vores svartider. Vi svare på alle mails inden for 24 timer!
+I kan altid komme i kontakt med os, når I har behov for det. Vi prioriterer dialog og service højt, hvilket afspejles i vores svartider. Vi svarer på alle mails inden for 24 timer!
 <br><br>
 I kan altid få fat på os, når I har behov for det. Vi forstår, at tabt tid altid måles direkte i produktionens nøgletal, hvorfor et hurtigt svar kan være afgørende for jer.
 <br><br>
