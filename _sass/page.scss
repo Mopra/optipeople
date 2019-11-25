@@ -622,9 +622,15 @@ img {
     .leftPos .col, .rightPos .col { margin:0;padding:0; }
     .leftPos {
       padding: 0 50px 0 0;
+      @media (max-width:1024px) {
+        padding:0 20px 0 0;
+      }
     }
     .rightPos {
       padding: 0 0 0 50px;
+      @media (max-width:1024px) {
+        padding:0 0 0 20px;
+      }
     }
 
     /*.week {
