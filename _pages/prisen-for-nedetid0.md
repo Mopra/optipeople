@@ -3,7 +3,7 @@ layout: landing
 title:  "Optipeople | Turning data into decisions"
 description: "asdf"
 image: /assets/uploads/fordele.jpg
-permalink: /prisen-for-nedetid0/
+permalink: /prisen-for-nedetid/
 heading: "Hvad koster nedetid?"
 ---
 
@@ -14,11 +14,12 @@ heading: "Hvad koster nedetid?"
 
       <div class="row">
         <p>
-Hvor meget koster maskinernes nedetid i produktionen? Fra vores kunder hører vi alt fra 600,- kr. pr. time til 20.000 kr. pr. time. Hvis du ikke har en præcis udregning på dette idag, kan vi hjælpe dig. Du kan også prøve at sætte nogle tal ind i nedenstående model, med udgangspunkt i hvad du tror det koster pr. time.
+Hvor meget koster maskinernes nedetid i produktionen? Fra vores kunder hører vi alt fra 600,- kr. per time til 20.000 kr. per time. Hvis du ikke har en præcis udregning på dette idag, kan vi hjælpe dig. Du kan også prøve at sætte nogle tal ind i nedenstående model, med udgangspunkt i hvad du tror det koster per time.
 <br><br>
-Antal max. tilgængelige produktionstimer pr. dag tager udgangspunkt i hvor mange timer maskinerne max. kan køre pr. dag - eksempel: Døgnet har 24 timer, så det er udgangspunktet, men hvis vi kun har 2 skiftehold af 8 timer hver, så er vi nede på max. 16 timers tilgængelighed. Hvis der på hver af de 2 skiftehold er 30 minutters "tilladt" pause, hvor maskinerne holder stille, så er vi nede på max. 15 timers tilgængelig tid.
+Antal max. tilgængelige produktionstimer per dag tager udgangspunkt i hvor mange timer maskinerne max. kan køre per dag - eksempel: Døgnet har 24 timer, så det er udgangspunktet, men hvis vi kun har 2 skiftehold af 8 timer hver, så er vi nede på max. 16 timers tilgængelighed. Hvis der på hver af de 2 skiftehold er 30 minutters "tilladt" pause, hvor maskinerne holder stille, så er vi nede på max. 15 timers tilgængelig tid.
 <br><br>
 Tilgængelighed/Availability - Her skal du tage stilling til, hvor stor en procentdel af maskinens max. tilgængelighed, der udnyttes. Hvis du f.eks. tror at maskinen max. har en oppetid på 70% vil det med ovenstående eksempel betyde at den effektive produktionstid for maskinen pr. døgn er: 15*0,70=10,5 timer.
+<br>
         </p>
       </div>
 
@@ -36,15 +37,15 @@ Tilgængelighed/Availability - Her skal du tage stilling til, hvor stor en proce
           <div class="row calcInput">
             <div class="hours input-field">
                 <input type="number" name="h" id="hours" data-length="2" />
-                <label for="hours">Antal max. tilgængelige produktionstimer pr. dag</label><br>
+                <label for="hours">Antal max. tilgængelige produktionstimer per dag</label><br>
             </div>
             <div class="cost input-field">
                 <input type="number" name="c" id="cost" data-length="6" />
-                <label for="cost">Pris pr. tabt produktionstime</label><br>
+                <label for="cost">Pris per tabt produktionstime</label><br>
             </div>
             <div class="availability input-field">
                 <input type="number" name="a" id="availability" data-length="2" />
-                <label for="availability">Tilgængelighed/availability %</label><br>
+                <label for="availability">Nuværende effektivitet målt i provent?</label><br>
             </div>
             <div class="week input-field">
                 <input type="number" name="week" id="week" data-length="2" />
@@ -58,14 +59,14 @@ Tilgængelighed/Availability - Her skal du tage stilling til, hvor stor en proce
 
           <div class="row">
             <h4>
-              Fremtiddig gevinst ved øget tilgængelighed
+              Fremtiddig gevinst ved øget effektivitet
             </h4>
           </div>
 
             <div class="row calcInput">
               <div class="availabili ty input-field">
                   <input type="number" name="fa" id="favailability" data-length="2" />
-                  <label for="favailability">Ønsket fremtiddig tilgængelighed/availability %</label><br>
+                  <label for="favailability">Ønsket fremtidig effektivitet i procent</label><br>
               </div>
             </div>
 

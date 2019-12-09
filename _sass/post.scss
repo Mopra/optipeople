@@ -104,9 +104,12 @@ img {
     }
     ul a { color:#f1f1f1; }
   }
-
+  .table-of-contents li {
+    padding:0;
+  }
   .table-of-contents a {
     line-height: 1rem;
+    font-size:16px;
   }
   .table-of-contents a.active {
     font-weight: 500;
